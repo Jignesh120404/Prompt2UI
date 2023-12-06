@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Kanit:wght@600&display=swap");
+
+body {
+  background-color: #020c3f;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container h1 {
+  color: white;
+  margin: 0;
+  margin-bottom: -2vh;
+  font-size: 200%;
+  font-family: "Kanit", sans-serif;
+}
+.container h4 {
+  color: white;
+  margin-bottom: 8vh;
+  font-family: "Cabin", sans-serif;
+}
+
+.container form input {
+  background-color: #2e417b;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.447);
+  border-width: 1.35px;
+  border-radius: 1%/10%;
+  width: 200px;
+  height: 40px;
+  padding: 0.1% 1.5%;
+  margin-bottom: 5px;
+  font-size: 80%;
+  font-family: "Cabin", sans-serif;
+  font-weight: 100;
+  color: #fff;
+}
+
+.container form input::placeholder {
+  color: #c1c7d9;
+}
+
+/* C1C7D9 */
+.container form button {
+  background-color: #5b3bb8;
+  color: white;
+  padding: 0.5% 2%;
+  border: none;
+  border-radius: 3%/15%;
+  font-size: 110%;
+  font-weight: 700;
+  margin-top: 4vh;
+  font-family: "Cabin", sans-serif;
+}
