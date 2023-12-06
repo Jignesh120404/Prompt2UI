@@ -6,10 +6,10 @@ from flask_cors import CORS
 import time
 import logging
 
-# Configure OpenAI API key
+
 openai.api_key = "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"
 
-# Set default values for company type and name
+
 company_type = "Company Type"
 company_name = "Company Name"
 
@@ -20,7 +20,7 @@ def return1():
     design1_button_list = [
         "Company Name text",
         "Creative Headline for Section 1",
-        # ... (other button names)
+      
         "Creative CTA button text for Section 4"
     ]
     design1_image_list = ["Section 1 Image"]
@@ -66,10 +66,10 @@ def return3():
 
     return design3_button_list, design3_image_list
 
-# ... (similar functions for return2 and return3)
+
 
 def returnText(button_name):
-    completion = None  # Initialize completion variable
+    completion = None  
 
     if button_name == 'Company Name text':
         return company_name
@@ -142,7 +142,7 @@ def returnImage(image_name):
     return link
 
 
-# ... (similar functions for update_json and returnImage)
+
 
 app = Flask(__name__)
 CORS(app)
@@ -164,7 +164,7 @@ def index():
     return 'Welcome to my website!'
 @app.route('/get_data', methods=['GET'])
 def send_data():
-    design_number = 2  # You can change this logic if needed
+    design_number = 2  
     if design_number == 1:
         button_list, image_list = return1()
         file_path = 'Design1.json'
