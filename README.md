@@ -14,7 +14,7 @@ This project is for research purpose only.
 1. Launch the Figma Desktop App.
 2. Open terminal in the project directory and run the following python script to get our backend up and running:
 ```bash
-python run_backend.py
+python prompt2UI.py
 ```
 This establishes a way for our project to fetch data from OpenAI and Midjourney.
 3. Go to the Figma App, create a new design file, right click on the blank space, go to 
